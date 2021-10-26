@@ -2,6 +2,29 @@
 	<link rel="stylesheet" href="./style.css">
 </head>
 <body>
+<style>
+	body {
+		background-color: #000000;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100vh;
+	}
+
+	.spinner {
+		border: 8px solid rgba(0,0,0, .1);
+		border-left-color: aqua;
+		height: 100px;
+		width: 100px;
+		border-radius: 50%;
+		animation-name: spin 1s linear infinite;
+	}
+
+	@keyframes spin {
+		to {transform: rotate(360deg); }
+	}
+
+</style>
 <div class="container right-panel-active">
 	<!-- Sign Up -->
 	<div class="container__form container--signup">
